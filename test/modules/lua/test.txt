@@ -1,0 +1,5 @@
+title="Test Video"
+duration="120"
+path="test://www.testvideos.com/test.mp4"
+owner="John Doe"
+artist="John Doe"
