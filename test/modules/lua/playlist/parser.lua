@@ -2,9 +2,9 @@
 function probe()
 	vlc.msg.dbg("Initiated probe call")
 	vlc.msg.dbg("Access: " .. vlc.access .. " Path:" .. vlc.path)
-	local value = vlc.peek(10000000000000, 20)
+	local value = vlc.peek(5)
 	vlc.msg.dbg("Peeked value " .. value)
-	return (vlc.access == "file")
+	return (vlc.access == "mock")
 end
 
 -- Parse function
