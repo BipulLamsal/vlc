@@ -71,6 +71,7 @@ check_PROGRAMS = \
 	test_modules_lua_extension \
 	test_modules_lua_playlist_parser \
 	test_modules_lua_art_fetcher \
+	test_modules_lua_service_discovery \
 	test_mock_modules_lua_playlist_parser \
 	test_modules_misc_medialibrary \
 	test_modules_packetizer_helpers \
@@ -336,6 +337,10 @@ test_modules_lua_playlist_parser_CPPFLAGS = $(AM_CPPFLAGS)
 test_modules_lua_art_fetcher_SOURCES = modules/lua/art_fetcher.c
 test_modules_lua_art_fetcher_LDADD = $(LIBVLCCORE) $(LIBVLC)
 test_modules_lua_art_fetcher_CPPFLAGS = $(AM_CPPFLAGS)
+
+test_modules_lua_service_discovery_SOURCES = modules/lua/service_discovery.c
+test_modules_lua_service_discovery_LDADD = $(LIBVLCCORE) $(LIBVLC)
+test_modules_lua_service_discovery_CPPFLAGS = $(AM_CPPFLAGS)
 
 test_mock_modules_lua_playlist_parser_SOURCES= modules/lua/mock/playlist_parser.c
 test_mock_modules_lua_playlist_parser_LDADD = $(LUA_LIBS)
